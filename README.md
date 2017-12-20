@@ -54,3 +54,5 @@ $ python remoteFS.py mount 2222 3333 4444 5555 6666
 
 > Every data server writes to a local file called datastore_n.db where n is the data server number. Upon restart of the server data is loaded back into the memory from the file. 
 
+> In case of corrupted/missing datastore file, the server recovers data from other data servers of the cluster and repopulates the db. 
+
